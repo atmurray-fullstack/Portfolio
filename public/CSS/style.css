@@ -1,46 +1,43 @@
-
-.parallax-container {
-    height: 35vh;
-    padding: 0%;
-  }
-.nav-wrapper {
-  font-size: 14px;
-  font-weight: bold;
-  padding-left: 5%;
+.containerRow{
+  height: 100vh;
+}
+.rflex{
+position:absolut;
+ 
 }
 
+.leftContainer{
+  width:20vw;
+  background:white;
+}
+.rcontainer{
+  overflow: hidden;
+  background-color: #111111;
 
-.container-footer {
-  padding-bottom: 2%;
+  height:100vh;
+  width:80vw;
+  /* background: #111111; */
+  clip-path: polygon(48% 0, 100% 0%, 100% 100%, 0% 100%);
 }
+.image-fade{
+  position: fixed;
+  background-image: url("/images/tongue.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  opacity: .1;
 
-
-.container {
-  margin: 0 auto;
-  max-width: 1280px;
-  min-width: 90vw;
 }
-@media only screen and (min-width: 601px) {
-  .container {
-    width: 85%;
-  }
+.hexagon{
+  
+  position: relative;
+  background:white;
+  margin: 5px;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  padding:0;
 }
-@media only screen and (min-width: 993px) {
-  .container {
-    width: 70%;
-  }
-}
-@media (max-width: 600px) {
-  .navbar-material .nav-wrapper .brand-logo img {
-    height: 56px;
-  }
-}
-
-.input-field{
-  font-weight: bolder;
-  color:black;
-}
-.side-nav {
-  background-color: #b0bec5;
-  padding-top: 5%;
+.hexagon p{
+  color: #111111;
 }
