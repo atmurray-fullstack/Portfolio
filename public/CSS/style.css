@@ -83,10 +83,10 @@ position:absolut;
 @media only screen and (max-width:850px ){
   .fullstack-index{
     position: relative;
-    top:10vh;
+    top:5vh;
     left: -10vw;
-    color: white;
+    color: orange;
     font-size: 40%;
-    transform: rotate(-57deg);
+    /* transform: rotate(-57deg); */
   }
 }
