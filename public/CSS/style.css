@@ -84,7 +84,7 @@ position:absolut;
   .fullstack-index{
     position: relative;
     top:5vh;
-    left: -5vw;
+    left: -15vw;
     color: orange;
     font-size: 60%;
     /* transform: rotate(-57deg); */
