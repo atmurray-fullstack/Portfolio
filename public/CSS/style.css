@@ -1,6 +1,11 @@
+.navbar{
+  margin-bottom:0px;
+
+}
 .containerRow{
   height: 100vh;
   display: inline-flex;
+  margin: 0px;
 }
 .row{
   padding: 0px;
@@ -29,7 +34,7 @@ position:absolut;
   background-image: url("/images/tongue.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   width: 100vw;
   height: 100vh;
   opacity: .1;
@@ -48,16 +53,40 @@ position:absolut;
   color: #111111;
 }
 .first-name{
-  position: relative;;
-  font-size: 8rem;
+  position: absolute;
+  font-size: 10vw;
   font-weight: bolder;
+  top:8vh
 }
 .last-name{
   z-index: 9999;
-  color: #4A4A4A;
-  position: relative;;
+  color: white;
+  position: absolute;
   font-size: 11vw;
   font-weight: bolder;
-  top: 10%;
-  left: 12%;
+  top: 30vh;
+  left: 1vw;
+}
+
+.fullstack-index{
+  position: relative;
+  top:10vh;
+  left: -15vw;
+  color: orange;
+  font-size: 40%;
+  /* transform: rotate(-57deg); */
+}
+
+.cursive{
+  font-family: 'Allura', cursive;
+}
+@media only screen and (max-width:850px ){
+  .fullstack-index{
+    position: relative;
+    top:10vh;
+    left: -10vw;
+    color: white;
+    font-size: 40%;
+    transform: rotate(-57deg);
+  }
 }
