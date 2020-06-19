@@ -1,5 +1,7 @@
 .container{
-
+  padding: 0;
+  margin: 0;
+  width: 100%;
 }
 .leftContainer{
   /* width:20vw; */
@@ -8,7 +10,7 @@
 .rcontainer{
   color: white;
   background-color: #111111;
-  background-image: url('/images/tng.png');
+  background-image: url("/images/tng.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; 
@@ -85,18 +87,73 @@
    
     }
 }
-/* @media only screen and (max-width:990px ){
-  #navbarToggler{
-   position:absolute;
-   right: 50vw;
-   
-   
-    }
+/*////////////////////////    PORTFOLIO CSS    //////////////////////////////////*/
+.project-row{
+  height: 75vh;
+  background-color: black;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 94%);
 }
+.balloon{
+  border-radius: 2%;
+  height:70%;
+  width: 90%;
+  background-color: white;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 73% 100%, 63% 76%, 0% 75%);}
 
-#navbarToggler{
-  position:absolute;
-  right:3vw;
-} */
+  .flip-card {
+    background-color: transparent;
+    width:auto;
+    height: 70%;
+    border: 1px solid #f1f1f1;
+    border-radius: 4%;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    border-radius: 4%;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+    
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    border-radius: 4%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+    border-radius: 4%;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: black;
+    color: white;
+    transform: rotateY(180deg);
+  }
 
-
+  .background{
+    overflow: hidden;
+    background-image: url("/images/airport.png");
+  }
+  .bottom-div{
+    height: 24vh;
+  }
