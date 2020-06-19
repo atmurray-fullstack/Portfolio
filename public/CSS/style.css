@@ -1,92 +1,88 @@
-.navbar{
-  margin-bottom:0px;
+.container{
 
 }
-.containerRow{
-  height: 100vh;
-  display: inline-flex;
-  margin: 0px;
-}
-.row{
-  padding: 0px;
-  margin: 0px;
-}
-.rflex{
-position:absolut;
- 
-}
-
 .leftContainer{
-  width:20vw;
+  /* width:20vw; */
   background:white;
 }
 .rcontainer{
-  overflow: hidden;
+  color: white;
   background-color: #111111;
-
-  height:100vh;
-  width:80vw;
-  /* background: #111111; */
-  clip-path: polygon(48% 0, 100% 0%, 100% 100%, 0% 100%);
-}
-.image-fade{
-  position: fixed;
-  background-image: url("/images/tongue.png");
+  background-image: url('/images/tng.png');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
-  width: 100vw;
-  height: 100vh;
-  opacity: .1;
+  background-size: cover; 
+  height:95vh;
+  width: 100%;
+  clip-path: polygon(48% 0, 100% 0%, 100% 100%, 0% 100%);
+}
 
-}
-.hexagon{
-  
-  position: relative;
-  background:white;
-  margin: 5px;
-  margin-right: 10px;
-  clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%);
-  padding:0;
-}
-.hexagon p{
-  color: #111111;
-}
+
 .first-name{
   position: absolute;
   font-size: 10vw;
   font-weight: bolder;
-  top:8vh
+  top:8vh;
+  left:4vw;
 }
 .last-name{
-  z-index: 9999;
   color: white;
-  position: absolute;
+  position: relative;
   font-size: 11vw;
   font-weight: bolder;
-  top: 30vh;
-  left: 1vw;
+  top: 40vh;
+  left: 20vw;
+
 }
 
 .fullstack-index{
-  position: relative;
-  top:10vh;
-  left: -15vw;
+  position: absolute;
+  bottom:1vh;
+  right: 10vw;
   color: orange;
-  font-size: 40%;
-  /* transform: rotate(-57deg); */
+  font-size: 5rem;
 }
 
 .cursive{
   font-family: 'Allura', cursive;
 }
-@media only screen and (max-width:850px ){
-  .fullstack-index{
-    position: relative;
-    top:5vh;
-    left: -15vw;
-    color: orange;
-    font-size: 60%;
-    /* transform: rotate(-57deg); */
-  }
+.listRow{
+  position: absolute;
+  bottom: 25vh;
+  left:5vw;
 }
+.lang-list-item{
+  color: #C2C1C0;
+  font-size: 1.40rem;
+}
+
+@media only screen and (min-width:590px ){
+  .last-name{
+    color: white;
+    position: absolute;
+    font-size: 11vw;
+    font-weight: bolder;
+    top: 40vh;
+    left: 20vw;
+    }
+}
+@media only screen and (max-width:590px ){
+  .last-name{
+    color: white;
+    position: absolute;
+    font-size: 15vw;
+    font-weight: bolder;
+    top: 40vh;
+    left: 35vw;
+    }
+}
+@media only screen and (max-width:590px ){
+  .listRow{
+    position: absolute;
+    font: 16px;
+    top: 18vh;
+    left:5vw;
+   
+    }
+}
+
