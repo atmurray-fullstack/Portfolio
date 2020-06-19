@@ -48,7 +48,7 @@
 }
 .listRow{
   position: absolute;
-  bottom: 25vh;
+  bottom: 20vh;
   left:5vw;
 }
 .lang-list-item{
@@ -85,4 +85,18 @@
    
     }
 }
+/* @media only screen and (max-width:990px ){
+  #navbarToggler{
+   position:absolute;
+   right: 50vw;
+   
+   
+    }
+}
+
+#navbarToggler{
+  position:absolute;
+  right:3vw;
+} */
+
 
