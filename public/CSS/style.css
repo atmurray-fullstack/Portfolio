@@ -153,6 +153,9 @@
   .background{
     overflow: hidden;
     background-image: url("/images/airport.png");
+    background-repeat: no-repeat;
+    /* background-size:135%; */
+    background-position: center;
   }
   .bottom-div{
     height: 24vh;
