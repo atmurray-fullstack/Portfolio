@@ -1,7 +1,10 @@
-.container{
+.container-fluid{
   padding: 0;
   margin: 0;
   width: 100%;
+}
+.container .h2{
+  color: whitesmoke;
 }
 .leftContainer{
   background:white;
@@ -93,7 +96,7 @@
   height: 75vh;
   background-color: black;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 94%);
-  overflow: scroll;
+  /* overflow: scroll; */
 }
 
 
@@ -149,6 +152,7 @@
 
 
   .background{
+    color: whitesmoke;
     overflow: hidden;
     background-image: url("/images/airport.png");
     background-repeat: no-repeat;
@@ -244,3 +248,4 @@
     }
 
   }
+/*////////////////////    CONTACT PAGE CSS     /////////////////////////*/
