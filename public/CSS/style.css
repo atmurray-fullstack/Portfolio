@@ -249,3 +249,36 @@
 
   }
 /*////////////////////    CONTACT PAGE CSS     /////////////////////////*/
+.contact-div{
+  height: 98vh;
+  width: auto;
+}
+
+.picture-div{
+  background-image: url("../images/reg_colors.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  border-radius: 20px;
+  height: 100%;
+  width: 100%;
+  position:absolute;
+  top:0;
+  left: 0px;
+  background-color: turquoise;
+
+}
+.star-div{
+  background-image: url("../images/Image-1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  border-radius: 20px;
+  height: 100%;
+  width: 100%;
+  position:absolute;
+  top:0;
+  left: 0px;
+  clip-path: polygon(100% 28%, 0 28%, 74% 100%);}
