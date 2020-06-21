@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   width: 100%;
+ 
 }
 .container .h2{
   color: whitesmoke;
@@ -252,6 +253,12 @@
 .contact-div{
   height: 98vh;
   width: auto;
+  background-image: url("/images/instabridge_grey.png");
+  background-position: center;
+  background-size: cover;
+}
+.andrew-div{
+  height: 100%;
 }
 
 .picture-div{
@@ -262,7 +269,7 @@
 
   border-radius: 20px;
   height: 85%;
-  width: 100%;
+  width: 75%;
   position:absolute;
   top:0;
   left: 0px;
@@ -277,7 +284,7 @@
 
   border-radius: 20px;
   height: 85%;
-  width: 100%;
+  width: 75%;
   position:absolute;
   top:0;
   left: 0px;
@@ -285,7 +292,8 @@
 
 
   .arrow-div{
-
+    height: 35vh;
+    widths: 100%;
   }
 
   #arrow{
@@ -293,6 +301,13 @@
     width:10vw;
     background-color:orange;
     clip-path: polygon(75% 0, 60% 60%, 90% 60%, 51% 100%, 10% 60%, 40% 60%, 25% 0);
+    -webkit-animation:bounce 1s infinite;
+  }
+  @-webkit-keyframes bounce {
+    0%       { bottom:5px; }
+    25%, 75% { bottom:15px; }
+    50%      { bottom:35px; }
+    100%     {bottom:0;}
   }
   .form-div{
 
