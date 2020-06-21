@@ -4,7 +4,6 @@
   width: 100%;
 }
 .leftContainer{
-  /* width:20vw; */
   background:white;
 }
 .rcontainer{
@@ -89,21 +88,19 @@
 }
 /*////////////////////////    PORTFOLIO CSS    //////////////////////////////////*/
 .project-row{
+  color:white;
+  font-weight: bolder;
   height: 75vh;
   background-color: black;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 94%);
+  overflow: scroll;
 }
-.balloon{
-  border-radius: 2%;
-  height:70%;
-  width: 90%;
-  background-color: white;
-  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 73% 100%, 63% 76%, 0% 75%);}
+
 
   .flip-card {
     background-color: transparent;
-    width:auto;
-    height: 70%;
+    width:90%;
+    height: 40%;
     border: 1px solid #f1f1f1;
     border-radius: 4%;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
@@ -150,6 +147,7 @@
     transform: rotateY(180deg);
   }
 
+
   .background{
     overflow: hidden;
     background-image: url("/images/airport.png");
@@ -159,4 +157,90 @@
   }
   .bottom-div{
     height: 24vh;
+  }
+
+
+  @media only screen and (max-width:590px ){
+
+    .flip-card {
+      margin-left: 10%;
+      background-color: transparent;
+      width:75%;
+      height: 100%;
+      border: 1px solid #f1f1f1;
+      border-radius: 4%;
+      perspective: 1000px;
+      margin-bottom: 10px; /* Remove this if you don't want the 3D effect */
+    }
+
+
+    .flip-card-front, .flip-card-back {
+      border-radius: 4%;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden; /* Safari */
+      backface-visibility: hidden;
+    }
+    
+    .bottom-div{
+      height: 2vh;
+    }
+    .project-row{
+      height: 100vh;
+      clip-path: polygon(0 0, 100% 1%, 100% 100%, 0% 100%);      overflow: scroll;
+     }
+  }
+
+
+@media only screen and (min-width:576px) and (max-width:992px ){
+
+    .flip-card {
+      margin-left: 10%;
+      background-color: transparent;
+      width: 75%;
+      height: 60%;
+      border: 1px solid #f1f1f1;
+      border-radius: 4%;
+      perspective: 1000px;
+      margin-bottom: 10px; 
+    }
+
+
+    .flip-card-front, .flip-card-back {
+      border-radius: 4%;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden; 
+      backface-visibility: hidden;
+    }
+    
+    .bottom-div{
+      height: 2vh;
+    }
+    .project-row{
+      height: 100vh;
+      clip-path: polygon(0 0, 100% 1%, 100% 100%, 0% 100%); 
+      overflow: scroll;
+     }
+  } 
+  @media only screen and (max-width:576px){
+    .flip-card {
+      margin-left: 20%;
+      background-color: transparent;
+      width: 60%;
+      height: 80%;
+      border: 1px solid #f1f1f1;
+      border-radius: 4%;
+      perspective: 1000px;
+      margin-bottom: 10px; 
+    }
+    .project-row{
+      background-image: url("/images/airport.png");
+      background-repeat: no-repeat;
+      /* background-size:135%; */
+      background-position: center;
+    }
+
   }
