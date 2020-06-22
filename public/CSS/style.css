@@ -312,12 +312,11 @@
 
   form label{
     color:orange;
-    font-weight: bolder;
     font-family:'Shrikhand', cursive; ;
     font-size: 2vw;
 
   }
-@media screen and (max-width:990px){
+@media screen and (min-width:769px) and (max-width:990px){
     form label{
       color:orange;
      font-weight: bolder;
@@ -325,6 +324,15 @@
       font-size: 2.65vw;
 
     }
+}
+@media screen and (max-width:768px){
+  form label{
+    color:black;
+   font-weight: bolder;
+    font-family:'Shrikhand', cursive; ;
+    font-size: 4vw;
+
+  }
 }
   .scroll-div {
     height: 15vh; 
