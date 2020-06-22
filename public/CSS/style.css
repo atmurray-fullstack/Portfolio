@@ -100,23 +100,35 @@
 .project-row{
   color:white;
   font-weight: bolder;
-  height: 75vh;
+  height: 65vh;
   background-color: black;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 94%);
-  /* overflow: scroll; */
+ 
+}
+.background h4 {
+  font-family:'Notable', cursive;
+  word-spacing: 1vw;
+  color: orange;
+}
+
+.background p{
+  color:orange;
+  font-family: 'Notable', sans-serif;
 }
 
 
+
   .flip-card {
+    margin:2%;
     background-color: transparent;
     width:90%;
     height: 40%;
     border: 1px solid #f1f1f1;
     border-radius: 4%;
-    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    perspective: 1000px; 
   }
   
-  /* This container is needed to position the front and back side */
+  
   .flip-card-inner {
     border-radius: 4%;
     position: relative;
@@ -127,7 +139,7 @@
     transform-style: preserve-3d;
   }
   
-  /* Do an horizontal flip when you move the mouse over the flip box container */
+  
   .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
     
@@ -139,11 +151,11 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
   }
   
-  /* Style the front side (fallback if image is missing) */
+  
   .flip-card-front {
     background-color: #bbb;
     color: black;
@@ -172,6 +184,9 @@
 
 
   @media only screen and (max-width:590px ){
+    .card-container{
+      height: 30vh;
+    }
 
     .flip-card {
       margin-left: 10%;
@@ -181,7 +196,7 @@
       border: 1px solid #f1f1f1;
       border-radius: 4%;
       perspective: 1000px;
-      margin-bottom: 10px; /* Remove this if you don't want the 3D effect */
+      margin-bottom: 10px; 
     }
 
 
@@ -199,7 +214,8 @@
     }
     .project-row{
       height: 100vh;
-      clip-path: polygon(0 0, 100% 1%, 100% 100%, 0% 100%);      overflow: scroll;
+      clip-path: polygon(0 0, 100% 1%, 100% 100%, 0% 100%);
+      overflow: scroll;
      }
   }
 
