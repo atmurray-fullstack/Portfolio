@@ -100,14 +100,17 @@
                 <div class="input-group-prepend">
                     <span class="input-group-text">Sign and Comment</span>
                 </div>
-                <input id = "commentName" type="text" aria-label="Name" class="form-control">
-                <input id = "comment" type="text" aria-label="Comment" class="form-control">
-                <button id= "commentSubmit" type="button" class="btn btn-warning">Submit</button>
+                <input id="commentName" type="text" aria-label="Name" class="form-control">
+                <input id="comment" type="text" aria-label="Comment" class="form-control">
+                <button id="commentSubmit" type="button" class="btn btn-warning">Submit</button>
             </div>
         </div>
-        <div class = "col-sm-6">
-
-
+        <div class="col-sm-6">
+            <ul class="list-group">
+                {{#each comments}}
+                <li class="list-group-item">{{this}}</li>
+                {{/each}}
+            </ul>
         </div>
 
     </div>
