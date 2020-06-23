@@ -1,5 +1,5 @@
 module.exports = function (sequelize, DataTypes) {
-    var comments = sequelize.define("comments", {
+    var Comments = sequelize.define("Comments", {
         name: {
             type: DataTypes.STRING
         },
@@ -12,5 +12,5 @@ module.exports = function (sequelize, DataTypes) {
     }, {
         timestamps: false
     })
-return comments
+return Comments
 };
