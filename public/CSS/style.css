@@ -186,7 +186,7 @@
     background-position: center;
   }
   .bottom-div{
-    height: 24vh;
+    height: 28vh;
   }
 
 
@@ -250,9 +250,6 @@
       backface-visibility: hidden;
     }
     
-    .bottom-div{
-      height: 2vh;
-    }
     .project-row{
       height: 100vh;
       clip-path: polygon(0 0, 100% 1%, 100% 100%, 0% 100%); 
