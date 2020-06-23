@@ -105,12 +105,11 @@
                 <button id="commentSubmit" type="button" class="btn btn-warning">Submit</button>
             </div>
         </div>
-        <div class="col-sm-6">
-            <ul class="list-group">
-                {{#each comments}}
-                <li class="list-group-item">{{this}}</li>
-                {{/each}}
-            </ul>
+        <div class="col-sm-6 text-center">
+           {{#each comments}}
+           <p style="color: orange;">{{this}}</p>
+           {{/each}}
+
         </div>
 
     </div>

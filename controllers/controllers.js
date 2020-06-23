@@ -1,4 +1,5 @@
 var db = require("../models");
+var path = require("path");
 
 
 module.exports = (app)=>{
@@ -9,14 +10,16 @@ module.exports = (app)=>{
         db.comments.create(data);
         db.comments.findAll({}).then(data=>{
             data.forEach(el=>{
-                if(commentArr.length >= 5){
-                    return
-                }
+                // if(commentArr.length >= 5){
+
+                //     return 
+                // }
                 commentArr.push(el.id+" "+el.comment+" ~ "+el.name)
                 console.log(commentArr);
             })
             console.log("here"+"=".repeat(50))
-            res.render("portfolio",{comments:commentArr});
+            console.log(path.join(__dirname, "../views/partials/comments.handlebars"))
+            res.render(path.join(__dirname, "../views/portfolio.handlebars"),{comments:commentArr})
         })
     });
 
