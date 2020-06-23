@@ -13,7 +13,7 @@ module.exports = function (app) {
    app.get('/:string', function (req, res) {
 
       if (req.params.string === "portfolio") {
-         const commentArr = [];
+         let commentArr = [];
          db.Comments.findAll({}).then(data => {
             data.forEach(el => {
                commentArr.push(el.id + " " + el.comment + " ~ " + el.name)
