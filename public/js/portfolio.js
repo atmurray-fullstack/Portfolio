@@ -33,13 +33,21 @@ $(document).ready(() => {
             name: name.val().trim(),
             comment: comment.val().trim()
         };
-        name.val("");
-        comment.val("");
 
-    $.post("/comment", data)
+        if (data.name === "" || data.comment === "") {
+            alert("name/comment cannot be blank.")
+        } else {
 
+            name.val("");
+            comment.val("");
 
-})
+            $.post("/comment", data).then(() => {
+                console.log("comment added!");
+                location.reload();
+            })
+
+        }
+    })
 
 });
 
