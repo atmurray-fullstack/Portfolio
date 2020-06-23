@@ -14,7 +14,7 @@ module.exports = function (app) {
 
       if (req.params.string === "portfolio") {
          const commentArr=[];
-         db.comments.findAll({}).then(data => {
+         db.Comments.findAll({}).then(data => {
             data.forEach(el => {
                // if(commentArr.length >= 5){
 
