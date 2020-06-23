@@ -19,7 +19,7 @@ module.exports = function (app) {
                commentArr.push(el.id + " " + el.comment + " ~ " + el.name)
             });
             if (commentArr.length > 5) {
-               commentArr.splice(-4, commentArr.length - 1)
+               commentArr = commentArr.slice(-4);
             }
             res.render(path.join(__dirname, "../views/portfolio.handlebars"), { comments: commentArr })
          })
