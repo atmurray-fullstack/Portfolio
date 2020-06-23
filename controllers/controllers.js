@@ -7,8 +7,8 @@ module.exports = (app)=>{
         const data = req.body;
         const commentArr=[]; 
         console.log(data)
-        db.comments.create(data);
-        db.comments.findAll({}).then(data=>{
+        db.Comments.create(data);
+        db.Comments.findAll({}).then(data=>{
             data.forEach(el=>{
                 // if(commentArr.length >= 5){
 
