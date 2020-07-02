@@ -106,33 +106,27 @@
 /*////////////////////////    PORTFOLIO CSS    //////////////////////////////////*/
 .project-row{
   color:white;
-  font-weight: bolder;
   height: 65vh;
   background-color: black;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 94%);
  
 }
-.background h4 {
-  font-family:'Notable', cursive;
-  word-spacing: 1vw;
+.background h4,p {
   color: orange;
 }
 
-.background p{
-  color:orange;
-  font-family: 'Notable', sans-serif;
-}
 
 
 
   .flip-card {
-    margin:2%;
+    margin:10%;
     background-color: transparent;
-    width:90%;
+    width:80%;
     height: 40%;
     border: 1px solid #f1f1f1;
     border-radius: 4%;
     perspective: 1000px; 
+
   }
   
   
@@ -322,7 +316,8 @@
   position: absolute;
   top:5%;
   left: 15%;
-  clip-path: polygon(100% 28%, 0 28%, 74% 100%);}
+  clip-path: polygon(100% 28%, 0 28%, 74% 100%);
+}
   
   .form-div{
     height:100vh;
@@ -352,7 +347,8 @@
   form label{
     color:orange;
     font-family:'Shrikhand', cursive; ;
-    font-size: 2vw;
+    font-size: 1.5vw;
+    letter-spacing: .15vh;
 
   }
 @media screen and (min-width:769px) and (max-width:990px){
