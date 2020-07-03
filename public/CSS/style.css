@@ -1,10 +1,16 @@
 .container-fluid{
+  overflow: hidden;
   padding: 0;
   margin: 0;
   width: 100%;
  
 }
-
+#welcomeGif{
+  position: absolute;
+  left: 5vw;
+  height: 9vh;
+  width: auto;
+}
 .footer{
   color: white;
   font-weight: bolder;
@@ -61,11 +67,7 @@
 .cursive{
   font-family: 'Allura', cursive;
 }
-.listRow{
-  position: absolute;
-  bottom: 20vh;
-  left:5vw;
-}
+
 
 .listRow li:hover{
   color: orange;
@@ -74,8 +76,24 @@
   color: #C2C1C0;
   font-size: 1.40rem;
 }
-
-@media only screen and (min-width:590px ){
+@media only screen and (min-width:768px ){
+  .listRow{
+   
+    position: absolute;
+    font: 16px;
+    top: 20vw;
+    left:5vw;
+   
+    }
+}
+@media only screen and (min-width:590px ) and (max-width:767px ){
+  .listRow{
+    position: absolute;
+    font: 16px;
+    top: 25vw;
+    left:5vw;
+   
+    }
   .last-name{
     color: white;
     position: absolute;
@@ -95,10 +113,15 @@
     left: 35vw;
     }
 
+    #welcomeGif{
+      height: 9vw;
+      width: auto;
+    }
+
   .listRow{
     position: absolute;
     font: 16px;
-    top: 18vh;
+    top: 15vh;
     left:5vw;
    
     }
