@@ -1,11 +1,9 @@
 
-$(document).ready(function () {
+// $(document).ready( () {
 
 
-    $().on("click",(event)=>{
-        $.get("/portfolio")
-    })
-});
+
+// });
 
 
 
