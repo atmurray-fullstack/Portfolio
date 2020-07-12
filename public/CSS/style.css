@@ -19,6 +19,9 @@
   margin: 0;
   width: 100%;
 }
+.footer-contact{
+  font-size:.6rem;
+}
 
 .container .h2{
   color: whitesmoke;
