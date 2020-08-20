@@ -1,6 +1,6 @@
 
-const sequelize = require('sequelize');
-const db = require('../models');
+// const sequelize = require('sequelize');
+// const db = require('../models');
 const path = require('path');
 module.exports = function (app) {
    console.log('html-routes');
@@ -13,17 +13,17 @@ module.exports = function (app) {
    app.get('/:string', function (req, res) {
 
       if (req.params.string === "portfolio") {
-         let commentArr = [];
-         db.Comments.findAll({}).then(data => {
-            data.forEach(el => {
-               commentArr.push(el.id + " " + el.comment + " ~ " + el.name)
-            });
-            if (commentArr.length > 5) {
-               commentArr = commentArr.slice(-4);
-            }
-            res.render(path.join(__dirname, "../views/portfolio.handlebars"), { comments: commentArr })
-         })
-
+         // let commentArr = [];
+         // db.Comments.findAll({}).then(data => {
+         //    data.forEach(el => {
+         //       commentArr.push(el.id + " " + el.comment + " ~ " + el.name)
+         //    });
+         //    if (commentArr.length > 5) {
+         //       commentArr = commentArr.slice(-4);
+         //    }
+         //    res.render(path.join(__dirname, "../views/portfolio.handlebars"), { comments: commentArr })
+         // })
+         res.render(path.join(__dirname, "../views/portfolio.handlebars"))
       } else if (req.params.string === "contact") {
          res.render(path.join(__dirname, '../views/contact.handlebars'))
 
